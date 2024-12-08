@@ -1,9 +1,9 @@
 \documentclass[11pt,a4paper,sans,english]{moderncv}
 
-\moderncvstyle[right]{classic}
-
 \definecolor{darkblue}{rgb}{0.376, 0.49, 0.54}
 \colorlet{color1}{darkblue}
+
+\moderncvstyle[right]{classic}
 
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.9,a4paper]{geometry}
@@ -11,6 +11,7 @@
 \usepackage{gensymb}
 \usepackage{footmisc} 
 \usepackage{xpatch}
+\usepackage{lmodern}
 
 
 \makeatletter
@@ -70,7 +71,7 @@
 \firstname{Francesco}
 \familyname{Sannicola}
 %\title{Curriculum Vit\ae{}}                              % optional, remove/comment the line if not wanted
-\title{Machine Learning Engineer\vspace*{8pt}}                              % optional, remove/comment the line if not wanted
+\title{Machine Learning | Software Engineering}                              % optional, remove/comment the line if not wanted
 %\address{1\degree trav. Via Antonio Chionna}{74015}{Martina Franca (TA)}
 % \address{}{}{\textcolor{black}{\faMapMarker} Italy, Martina Franca (TA)}
 % \mobile{+39 3270577556}
@@ -90,7 +91,7 @@
 	}
 	
 	\makecvtitle
-	\vspace*{-1.5cm} % Adjust this value as needed
+	\vspace*{-1cm} % Adjust this value as needed
 	% \section{About me}
 	%\bigbreak
 	% Pragmatic, sincere, and ambitious are three adjectives that best describe me. I love everything related to IT, Machine Learning and fitness.
@@ -114,12 +115,12 @@
 			\item[$\bullet$] NLP-based content proposition during web browsing: \textbf{RAG web application} designed to enhance user experience by providing supplementary content such as up-to-date news, encyclopedic information, and FAQs relevant to the page content. The application implements asynchronous \textbf{speech-to-text} and \textbf{text-to-speech} capabilities using Amazon Transcribe and Amazon Polly, respectively, allowing users to interact with the application through voice or text commands.
 			\item[$\bullet$] Predictive maintenance and remaining useful life estimation for Electric Vehicle (EV) charging stations: from an initial anomaly detection model to the development of a comprehensive \textbf{degradation model} to facilitate the identification of crucial variables that significantly influence wear and tear on EV charging stations.
 			\item[$\bullet$] Loan Default Prediction: implementation of a classification model for \textbf{past due identification} in order to proactively alert the bank several months in advance about the likelihood of a particular loan experiencing payment delays.
-			\item[$\bullet$] \textbf{Lecturer} in software development, databases and Java at \href{https://www.associazioneformazione.it/formazione-professionale/ifts-tecnico-per-la-progettazione-e-lo-sviluppo-di-applicazioni-informatiche}{\textit{\underline{Associazione Formazione}}}.
+			\item[$\bullet$] \textbf{Lecturer} in software development, databases and Python at \href{https://www.associazioneformazione.it/formazione-professionale/ifts-tecnico-per-la-progettazione-e-lo-sviluppo-di-applicazioni-informatiche}{\textit{\underline{Associazione Formazione}}}.
 			\item[$\bullet$] \textbf{Lecturer} in anomaly detection  and time series analysis at \href{https://academy.linksmt.it/corso-di-formazione-post-laurea-artificial-intelligence-machine-learning/}{\textit{\underline{Links Academy - AI \& ML}}} (labs available on	 \href{https://github.com/francesco-s/Links-Academy---Anomaly-Detection-Time-series-analysis}{\textit{\underline{Github}}}).
 			\item[$\bullet$] Contribution to \textbf{AI technical interviews} (review on \href{https://www.glassdoor.it/Colloquio/Links-Management-and-Technology-Colloquio-RVW82686296.htm}{\textit{\underline{Glassdoor}}}).
 			% \item[$\bullet$] Technologies: \texttt{Python, ML libraries, Java, FastAPI, Spring Boot, PostgreSQL, Amazon Web Services (EC2, S3, Lambda, SNS, Polly, Transcribe), Docker, Gitlab CI/CD, Keycloak, Mosquitto, KNIME}
 	\end{itemize}}
-\vspace*{-.15cm}
+ \vspace*{.25cm}
 % Big Data and Insight Driven Organization
 \cventry{\textcolor{gray}{\scalebox{0.8}\faCalendar} 10/2022--02/2023}{Artificial Intelligence and Data - Analyst}{\textcolor{gray}{\scalebox{0.8}\faBuilding} \href{https://www2.deloitte.com}{\textit{Deloitte}} }{}{\textcolor{gray}{\scalebox{0.8}\faMapMarker} Bari }{}
 \mycvitem{
@@ -134,7 +135,7 @@
 	% \item[$\bullet$] Technologies:  \texttt{Qlik Sense, SQL, MS Excel, Qlik NPrinting}
 \end{itemize}}
 % Hybrid Data Center \& PAAS
-\vspace*{-.15cm}
+\vspace*{.25cm}
 \cventry{\textcolor{gray}{\scalebox{0.8}\faCalendar} 12/2021--05/2022}{AI engineer and System Administrator - Intern}{\textcolor{gray}{\scalebox{0.8}\faBuilding} \href{https://www.intesasanpaolo.com/}{\textit{Intesa Sanpaolo}} }{}{\textcolor{gray}{\scalebox{0.8}\faMapMarker} Torino }{}
 \mycvitem{
 \vspace*{-.6cm}
@@ -149,7 +150,7 @@
 \end{itemize}}
 % \jobdouble{Waiter}{La Locanda Del Macellaio}{2016--2019}{Martina F.}{Sales Assistant - Intern}{Unieuro}{2014--2015}{Martina F.}
 
-\vspace*{-.2cm}
+%\vspace*{-.1cm}
 \section{Education}
 \vspace*{-.15cm}
 \cventry{\textcolor{gray}{\scalebox{0.8}\faCalendar} 01/2020--04/2022}{Master's degree in Computer Science - AI}{\textcolor{gray}{\scalebox{0.8}\faUniversity} \href{https://www.unito.it/}{\textit{University of Turin}} }{}{\textcolor{gray}{\scalebox{0.8}\faCheck} \textbf{GPA}: 3.71/4 }{}
@@ -158,7 +159,7 @@
 		\item[$\bullet$] 200h collabs: web pages development for freshman orientation, notes making and study support for student with disability.
 		\item[$\bullet$] Thesis: development and dashboarding of real-time time series \textbf{anomaly detection} systems on univariate time series using statistics, machine learning and deep learning (\href{https://sia.unito.it/studenti/intesi/Ricerca_tesi_libera/ricerca_tesi_dettaglio.asp?id_upload=226711\&cdl_tesi=\&cdl=\&matricola=941291}{\underline{link}} to thesis).
 \end{itemize}}
-\vspace*{-.15cm}
+\vspace*{.25cm}
 \cventry{\textcolor{gray}{\scalebox{0.8}\faCalendar} 10/2016--12/2019}{Bachelor's degree in Computer Science}{\textcolor{gray}{\scalebox{0.8}\faUniversity} \href{https://www.uniba.it/it}{\textit{University of Bari}} }{}{\textcolor{gray}{\scalebox{0.8}\faCheck} \textbf{GPA}: 4/4 }{}
 \mycvitem{\begin{itemize}
 	\item[$\bullet$] Major: Computer Architecture, Operating Systems, Algorithms and Data structures, Databases, Software Engineering.
@@ -170,7 +171,7 @@
 	%\item[$\bullet$] Project: \textbf{Arduino}-powered air/temp monitoring cleaning robot with RESTful API data transmission.
 	%\end{itemize}}  % arguments 3 to 6 can be left empty
 	
-	\vspace*{-.2cm}
+
 	\newcommand{\certification}[5]{%
 		\cvitem{#3}{\textbf{#1}, #2 (\href{#4}{\underline{\textit{Show credentials}}})}%
 	}
@@ -185,7 +186,7 @@
 	\newcommand{\certificationdouble}[9]{%
 		\cvdoubleitem{#3}{\textbf{#1}\newline#2 (\href{#4}{\underline{\textit{Show credentials}}})}{#7}{#5\newline#6 (\href{#8}{\underline{\textit{Show credentials}}})}
 	}
-	
+	%\vspace*{-.1cm}
 	\section{Certifications}
 	\small 
 	\certification{AWS Certified Machine Learning - Specialty}{Amazon Web Services}{04/2024}{https://www.credly.com/badges/ab41e8bd-32a3-49ce-a7a5-e3106f58beab/public_url}{}{}
@@ -201,7 +202,7 @@
 	%\cvitem{Languages}{Python, Java, SQL, R}
 	%\cvitem{Libraries}{Tensorflow, Keras, Scikit-learn, Pandas, NumPy, Matplotlib, FastAPI, Flask, Bokeh, Statsmodels}
 	%\cvitem{Other}{Qlik Sense, Git, Amazon Web Services (SageMaker, EC2, Lambda, S3, IAM, Glue, SNS), Docker, MongoDB, Spring, KNIME, Keycloak, Bash, Kubernetes, Mosquitto, \LaTeX, Prolog, ASP, MS Office}
-	\vspace*{-.2cm}
+	% \vspace*{-.2cm}
 	\section{Languages}
 	\normalsize
 	\cvdoubleitem{Italian:}{Native}{\hfill English:}{Professional Working Proficiency}
