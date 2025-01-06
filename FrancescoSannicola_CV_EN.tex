@@ -99,7 +99,9 @@
 	%\cvdoubleitem{Age:}{26 years old}{\hfill Domicile:}{Italy, Martina Franca (TA)}
 	\section{Working experience}
 	\vspace*{-.15cm}
-	\cventry{\textcolor{gray}{\scalebox{0.8}\faCalendar} 03/2023--current}{Machine Learning Engineer - Consultant}{\textcolor{gray}{\scalebox{0.8}\faBuilding} \href{https://www.linksmt.it/}{\textit{Links Management \& Technology}} }{}{\textcolor{gray}{\scalebox{0.8}\faMapMarker} Bari }{}
+	\cventry{\textcolor{gray}{\scalebox{0.8}\faCalendar} 01/2025-- current}{Senior Machine Learning Engineer}{\textcolor{gray}{\scalebox{0.8}\faBuilding} \href{https://www.linksmt.it/}{\textit{Links Management \& Technology}} }{}{\textcolor{gray}{\scalebox{0.8}\faMapMarker} Bari }{}
+	
+	\cventry{\textcolor{gray}{\scalebox{0.8}\faCalendar} 03/2023--12/2024}{Machine Learning Engineer}{\textcolor{gray}{\scalebox{0.8}\faBuilding} \href{https://www.linksmt.it/}{\textit{Links Management \& Technology}} }{}{\textcolor{gray}{\scalebox{0.8}\faMapMarker} Bari }{}
 	\mycvitem
 	{
 		\vspace*{-.6cm}
@@ -172,27 +174,60 @@
 	%\end{itemize}}  % arguments 3 to 6 can be left empty
 	
 
-	\newcommand{\certification}[5]{%
-		\cvitem{#3}{\textbf{#1}, #2 (\href{#4}{\underline{\textit{Show credentials}}})}%
-	}
-	\newcommand{\certificate}[5]{%
-		\cvitem{#3}{#1, #2 (\href{#4}{\underline{\textit{Show credentials}}})}%
-	}
-	
-	\newcommand{\certificatendouble}[9]{%
-		\cvdoubleitem{#3}{#1\newline#2 (\href{#4}{\underline{\textit{Show credentials}}})}{#7}{#5\newline#6 (\href{#8}{\underline{\textit{Show credentials}}})}
-	}
-	
-	\newcommand{\certificationdouble}[9]{%
-		\cvdoubleitem{#3}{\textbf{#1}\newline#2 (\href{#4}{\underline{\textit{Show credentials}}})}{#7}{#5\newline#6 (\href{#8}{\underline{\textit{Show credentials}}})}
-	}
-	%\vspace*{-.1cm}
-	\section{Certifications}
-	\small 
-	\certification{AWS Certified Machine Learning - Specialty}{Amazon Web Services}{04/2024}{https://www.credly.com/badges/ab41e8bd-32a3-49ce-a7a5-e3106f58beab/public_url}{}{}
-	\certificate{AWS Machine Learning – Specialty Certication Preparation}{Cloud Academy}{03/2024}{https://certificates.cloudacademy.com/8997053f1d2091596d528402607d41ca312060fc.pdf}{}{}
-	\certificate{Google Cloud Big Data and ML Fundamentals}{Coursera}{05/2022}{https://www.coursera.org/account/accomplishments/verify/KFC43YVQX5ZS}{}{}
-	\certificate{Google Cloud Fundamentals: Core Infrastructure}{Coursera}{04/2022}{https://www.coursera.org/account/accomplishments/verify/GCCEPUHES7UC}{}{}
+		\newcommand{\ExternalLink}{%
+			\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+				\begin{scope}[x=1ex, y=1ex]
+					\clip (-0.1,-0.1) 
+					--++ (-0, 1.2) 
+					--++ (0.6, 0) 
+					--++ (0, -0.6) 
+					--++ (0.6, 0) 
+					--++ (0, -1);
+					\path[draw, 
+					line width = 0.5, 
+					rounded corners=0.5] 
+					(0,0) rectangle (1,1);
+				\end{scope}
+				\path[draw, line width = 0.5] (0.5, 0.5) 
+				-- (1, 1);
+				\path[draw, line width = 0.5] (0.6, 1) 
+				-- (1, 1) -- (1, 0.6);
+			}
+		}
+		
+		\newcommand{\certification}[5]{%
+			\cvitem{#3}{\textbf{#1}, #2 (\href{#4}{\underline{\textit{Show credentials}}})}%
+		}
+		\newcommand{\certificate}[5]{%
+			\cvitem{#3}{#1, #2 (\href{#4}{\underline{\textit{Show credentials}}})}%
+		}
+		
+		\newcommand{\certificatendouble}[9]{%
+			\cvdoubleitem{#3}{#1\newline#2 (\href{#4}{\underline{\textit{Show credentials}}})}{#7}{#5\newline#6 (\href{#8}{\underline{\textit{Show credentials}}})}
+		}
+		
+		\newcommand{\certificationdoublebf}[9]{%
+			\cvdoubleitem{#3}{\textbf{#1} #2 \href{#4}{{\textbf{ \ExternalLink}}}}{#7}{#5 #6 \href{#8}{{\textbf{\ExternalLink}}}}
+		}
+		
+		\newcommand{\certificationdouble}[9]{%
+			\cvdoubleitem{#3}{{#1} #2 \href{#4}{{\textbf{ \ExternalLink}}}}{#7}{#5 #6 \href{#8}{{\textbf{\ExternalLink}}}}
+		}
+		
+		
+		
+		%\vspace*{-.1cm}
+		\section{Certifications}
+		\small 
+		%\certification{AWS Certified Machine Learning - Specialty}{Amazon Web Services}{04/2024}{https://www.credly.com/badges/ab41e8bd-32a3-49ce-a7a5-e3106f58beab/public_url}{}{}
+		%\certificate{AWS Machine Learning – Specialty Certication Preparation}{Cloud Academy}{03/2024}{https://certificates.cloudacademy.com/8997053f1d2091596d528402607d41ca312060fc.pdf}{}{}
+		%\certificate{Google Cloud Big Data and ML Fundamentals}{Coursera}{05/2022}{https://www.coursera.org/account/accomplishments/verify/KFC43YVQX5ZS}{}{}
+		
+		%\certificate{Google Cloud Fundamentals: Core Infrastructure}{Coursera}{04/2022}{https://www.coursera.org/account/accomplishments/verify/GCCEPUHES7UC}{}{}
+		
+		\certificationdoublebf{AWS Certified Machine Learning}{}{04/2024}{https://www.credly.com/badges/ab41e8bd-32a3-49ce-a7a5-e3106f58beab/public_url}{AWS Machine Learning Cert Preparation }{}{03/2024}{https://certificates.cloudacademy.com/8997053f1d2091596d528402607d41ca312060fc.pdf}{}
+		
+		\certificationdouble{GCP Big Data and ML Fundamentals}{}{05/2022}{https://www.coursera.org/account/accomplishments/verify/KFC43YVQX5ZS}{GCP Fundamentals: Core Infrastructure }{}{04/2022}{https://www.coursera.org/account/accomplishments/verify/GCCEPUHES7UC}{}
 	% \certificationdouble{AWS Certified Machine Learning - Specialty}{Amazon Web Services}{April 2024}{https://www.credly.com/badges/ab41e8bd-32a3-49ce-a7a5-e3106f58beab/public_url}{AWS ML – Specialty Certication Preparation}{Cloud Academy}{March 2024}{https://certificates.cloudacademy.com/8997053f1d2091596d528402607d41ca312060fc.pdf}
 	
 	%\certificatendouble{Google Cloud Fundamentals: Core Infrastructure}{Coursera}{April 2022}{https://www.coursera.org/account/accomplishments/verify/GCCEPUHES7UC}{Google Cloud Big Data and ML Fundamentals}{Coursera}{May 2022}{https://www.coursera.org/account/accomplishments/verify/KFC43YVQX5ZS}
