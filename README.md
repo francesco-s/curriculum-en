@@ -1,37 +1,43 @@
 # Francesco Sannicola Resume
 
-This repository contains a LaTeX-based resume template built with the [moderncv](https://www.ctan.org/pkg/moderncv) class. The template is customized for a professional resume/CV and includes several modifications to personalize the layout and design.
+This repository contains a LaTeX-based resume template built using the [moderncv](https://www.ctan.org/pkg/moderncv) class. The template is tailored for a professional resume/CV with custom modifications that enhance the layout, design, and functionality.
 
 ## Overview
 
 The LaTeX source code in this repository:
 
-- **Defines Custom Colors:** Uses a custom dark blue color for a consistent, professional look.
-- **Applies a Custom Layout:** Adopts the "classic" moderncv style with right-aligned details and modifies header spacing and photo placement.
-- **Uses Various Packages:** Includes packages such as `geometry`, `babel`, `gensymb`, `footmisc`, `xpatch`, and `lmodern` for enhanced typography and layout control.
-- **Redefines Commands:**
-  - The `\cventry` command is redefined for more flexibility in presenting work experiences.
-  - Custom commands like `\mycvitem` and `\cvtag` are used to format technologies and skills neatly within boxes.
-- **Includes Personal Data:** Contains sample personal data such as name, contact details, social media links (LinkedIn, GitHub), and a photo placeholder.
-- **Showcases Professional Experience, Education, and Certifications:** The document outlines work history, academic background, and additional certifications using structured sections.
+- **Defines Custom Colors:** Utilizes a custom dark blue color (`darkblue`/`customcolor`) to achieve a consistent and professional look.
+- **Applies a Custom Layout:** Adopts the "classic" moderncv style with right-aligned details and incorporates header patches to adjust spacing and photo placement.
+- **Uses a Variety of Packages:** Incorporates packages such as `geometry`, `babel`, `lmodern`, `gensymb`, `footmisc`, `xpatch`, `tikz`, and `tcolorbox` for enhanced typography, layout control, and decorative elements.
+- **Redefines Key Commands:**
+  - The `\cventry` command is redefined to support a two-column layout with flexible spacing for work experiences.
+  - Custom commands like `\mycvitem` and `\cvtag` are provided to neatly display skills, technologies, and other bullet-point items in a visually appealing format.
+  - Additional commands (e.g., `\jobdouble`) have been introduced for structuring entries that require side-by-side information.
+- **Includes Detailed Personal Data:** The resume includes personal information such as name, professional title ("Machine Learning | Software Engineering"), contact details, social media links (LinkedIn and GitHub), and a placeholder for a profile photo.
+- **Showcases Professional Experience, Education, Certifications, and Languages:**
+  - **Working Experience:** Highlights roles such as Machine Learning Engineer at Links Management & Technology, including detailed descriptions and a list of technologies (e.g., Python, Docker, AWS services).
+  - **Education:** Lists a Master's degree in Computer Science - AI from the University of Turin and a Bachelor's degree in Computer Science from the University of Bari, complete with GPA details and thesis topics.
+  - **Certifications:** Features certifications including AWS Certified Machine Learning and GCP Big Data and ML Fundamentals with direct links to credentials.
+  - **Languages:** Displays proficiency levels (Italian: Native, English: Professional Working Proficiency).
 
-If you want to use this template, follow the prerequisites and customization instructions to tailor it to your needs.
+If you wish to use or customize this template, please review the prerequisites and instructions below.
 
 ## Prerequisites
 
-Before compiling the template, ensure you have the following installed:
+Before compiling the resume, ensure you have the following installed:
 
 - **TeX Distribution:** A modern TeX distribution (e.g., [TeX Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/)).
-- **ModernCV Package:** The `moderncv` package must be available. It is usually included in most distributions.
-- **Required Packages:** Make sure the following packages are installed:
+- **ModernCV Package:** The `moderncv` package, which is typically included in most distributions.
+- **Required Packages:** Verify that you have installed:
   - `inputenc`
   - `geometry`
   - `babel`
+  - `lmodern`
   - `gensymb`
   - `footmisc`
   - `xpatch`
-  - `lmodern`
-  - Additionally, `tcolorbox` is used for custom technology tags.
+  - `tikz`
+  - `tcolorbox`
 
 ## Compilation
 
@@ -42,19 +48,20 @@ To compile the resume, follow these steps:
    ```bash
    pdflatex resume.tex
    ```
-   Run the command twice to ensure all references are updated.
+   It is recommended to run the command twice to ensure all references and layout adjustments are correctly updated.
 
 ## Customization
 
-Feel free to modify the following aspects of the template:
+You can easily modify several aspects of the template to fit your needs:
 
-- **Personal Information:** Update your name, contact details, social media links, and photo path.
-- **Content Sections:** Adjust the sections (Working Experience, Education, Certifications, etc.) according to your needs.
-- **Design Elements:** Change colors, fonts, and layout by modifying the color definitions and command redefinitions at the beginning of the document.
+- **Personal Information:** Update your name, professional title, contact details, social media links, and the path to your profile photo.
+- **Content Sections:** Customize sections such as Working Experience, Education, Certifications, and Languages to better match your background.
+- **Design Elements:** Adjust colors, fonts, and overall layout by editing the color definitions and command redefinitions at the beginning of the document.
 - **Commands:**
-  - **`\cventry`:** Redefined for a two-column layout with customizable spacing.
-  - **`\mycvitem`:** Used to add bullet-point items with controlled spacing.
-  - **`\cvtag`:** Creates styled tags for technologies and skills.
+  - **`\cventry`:** Redesigned for a two-column format with adjustable spacing.
+  - **`\mycvitem`:** Used for adding bullet-point items with controlled spacing.
+  - **`\cvtag`:** Creates stylish tags for technologies and skills within decorative boxes.
+  - **`\jobdouble`:** Supports side-by-side job descriptions for a more compact presentation.
 
 ## Directory Structure
 
@@ -78,4 +85,3 @@ For any inquiries or feedback, please reach out via:
 
 - **Email:** [francescosannicola1997@gmail.com](mailto:francescosannicola1997@gmail.com)
 - **LinkedIn:** [francesco-sannicola](https://www.linkedin.com/in/francesco-sannicola)
-- **GitHub:** [francesco-s](https://github.com/francesco-s)
