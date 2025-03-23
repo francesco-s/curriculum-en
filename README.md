@@ -13,12 +13,8 @@ The LaTeX source code in this repository:
   - The `\cventry` command is redefined to support a two-column layout with flexible spacing for work experiences.
   - Custom commands like `\mycvitem` and `\cvtag` are provided to neatly display skills, technologies, and other bullet-point items in a visually appealing format.
   - Additional commands (e.g., `\jobdouble`) have been introduced for structuring entries that require side-by-side information.
-- **Includes Detailed Personal Data:** The resume includes personal information such as name, professional title ("Machine Learning | Software Engineering"), contact details, social media links (LinkedIn and GitHub), and a placeholder for a profile photo.
-- **Showcases Professional Experience, Education, Certifications, and Languages:**
-  - **Working Experience:** Highlights roles such as Machine Learning Engineer at Links Management & Technology, including detailed descriptions and a list of technologies (e.g., Python, Docker, AWS services).
-  - **Education:** Lists a Master's degree in Computer Science - AI from the University of Turin and a Bachelor's degree in Computer Science from the University of Bari, complete with GPA details and thesis topics.
-  - **Certifications:** Features certifications including AWS Certified Machine Learning and GCP Big Data and ML Fundamentals with direct links to credentials.
-  - **Languages:** Displays proficiency levels (Italian: Native, English: Professional Working Proficiency).
+- **Includes Detailed Personal Data:** The resume includes personal information such as name, professional title, contact details, social media links (LinkedIn and GitHub), and a placeholder for a profile photo.
+- **Showcases Professional Experience, Education, Certifications, and Languages**
 
 If you wish to use or customize this template, please review the prerequisites and instructions below.
 
