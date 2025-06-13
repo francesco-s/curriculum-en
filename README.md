@@ -67,8 +67,7 @@ A suggested directory structure for the project might be:
 .
 ├── resume.tex         % Main LaTeX file
 ├── README.md          % This file
-├── images/            % (Optional) Folder for images (e.g., profile photo)
-└── bibliography/      % (Optional) Folder for bibliographic files if needed
+└── images/            % (Optional) Folder for images (e.g., profile photo)
 ```
 
 ## Contributing
