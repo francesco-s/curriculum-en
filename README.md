@@ -1,4 +1,4 @@
-# Francesco Sannicola Resume
+# LaTeX Resume Template
 
 This repository contains a LaTeX-based resume template built using the [moderncv](https://www.ctan.org/pkg/moderncv) class. The template is tailored for a professional resume/CV with custom modifications that enhance the layout, design, and functionality.
 
