@@ -1,7 +1,8 @@
 \documentclass[11pt,a4paper,sans,english]{moderncv}
 
+
 %----------------------------------------------------------------------------------------
-%	ENCODING, FONTS & PAGE LAYOUT
+%   ENCODING, FONTS & PAGE LAYOUT
 %----------------------------------------------------------------------------------------
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.9,a4paper]{geometry}
@@ -9,8 +10,9 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 
+
 %----------------------------------------------------------------------------------------
-%	PACKAGES
+%   PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{gensymb}
 \usepackage{footmisc}
@@ -19,21 +21,23 @@
 \usepackage{tikz}
 \usepackage{tcolorbox}
 
+
 %----------------------------------------------------------------------------------------
-%	COLOR DEFINITIONS
+%   COLOR DEFINITIONS
 %----------------------------------------------------------------------------------------
 \definecolor{darkblue}{rgb}{0.376, 0.49, 0.54}
 \colorlet{color1}{darkblue}
 \definecolor{customcolor}{rgb}{0.376, 0.49, 0.54}
 \definecolor{lightgray}{rgb}{0.70, 0.70, 0.70}
 
+
 %----------------------------------------------------------------------------------------
-%	MODERNCV STYLE
+%   MODERNCV STYLE
 %----------------------------------------------------------------------------------------
 \moderncvstyle[right]{classic}
 
 %----------------------------------------------------------------------------------------
-%	HEADER PATCHES
+%   HEADER PATCHES
 %----------------------------------------------------------------------------------------
 \makeatletter
 \patchcmd{\makehead}{\hfil}{\hspace*{0.15\textwidth}}{}{}
@@ -45,191 +49,198 @@
 {\par\vskip1ex\titlestyle{\@title}}{}{}
 \makeatother
 
+
 %----------------------------------------------------------------------------------------
-%	CUSTOM FONT SIZES AND COLUMN WIDTH
+%   CUSTOM FONT SIZES AND COLUMN WIDTH
 %----------------------------------------------------------------------------------------
 \renewcommand*{\namefont}{\fontsize{30}{36}\mdseries\upshape}
 \renewcommand*{\titlefont}{\fontsize{15}{18}\mdseries\upshape}
 \setlength{\hintscolumnwidth}{1.9cm}
 
+
 %----------------------------------------------------------------------------------------
-%	REDEFINE cventry COMMAND
+%   REDEFINE cventry COMMAND
 %----------------------------------------------------------------------------------------
 \renewcommand*{\cventry}[6][.25em]{%
-	\vspace{1.5mm}%
-	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}%
-		\ifthenelse{\equal{#3}{}}{}{\textbf{#3}} &
-		\ifthenelse{\equal{#2}{}}{}{#4 #6 #2}\\%
-	\end{tabular*}%
-	\par\addvspace{#1}}
+    \vspace{1.5mm}%
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}%
+        \ifthenelse{\equal{#3}{}}{}{\textbf{#3}} &
+        \ifthenelse{\equal{#2}{}}{}{#4 #6 #2}\\%
+    \end{tabular*}%
+    \par\addvspace{#1}}
+
 
 %----------------------------------------------------------------------------------------
-%	DEFINE mycvitem COMMAND
+%   DEFINE mycvitem COMMAND
 %----------------------------------------------------------------------------------------
 \newcommand*{\mycvitem}[2][.25em]{%
-	\vspace{-.25em}%
-	\begin{tabular}{@{}p{\textwidth}@{}}%
-		\small#2%
-	\end{tabular}%
-	\par\addvspace{-0.7em}}
+    \vspace{-.25em}%
+    \begin{tabular}{@{}p{\textwidth}@{}}%
+        \small#2%
+    \end{tabular}%
+    \par\addvspace{-0.7em}}
+
 
 %----------------------------------------------------------------------------------------
-%	TECHNOLOGY BOX AND CVTAG COMMANDS
+%   TECHNOLOGY BOX AND CVTAG COMMANDS
 %----------------------------------------------------------------------------------------
 \newcommand{\technology}[1]{%
-	\begin{tcolorbox}[colframe=customcolor, colback=lightgray, boxrule=0mm, left=0mm, right=0mm, top=0mm, bottom=0mm, boxsep=0mm]
-		\strut\centering #1
+    \begin{tcolorbox}[colframe=customcolor, colback=lightgray, boxrule=0mm, left=0mm, right=0mm, top=0mm, bottom=0mm, boxsep=0mm]
+        \strut\centering #1
 \end{tcolorbox}}
 
+
 \newcommand*{\cvtag}[1]{%
-	\textcolor{lightgray!50!black}{\fbox{\mathstrut\scriptsize\textsf{\textbf{#1}}}}}
+    \textcolor{lightgray!50!black}{\fbox{\mathstrut\scriptsize\textsf{\textbf{#1}}}}}
+
 
 %----------------------------------------------------------------------------------------
-%	PERSONAL DATA
+%   PERSONAL DATA
 %----------------------------------------------------------------------------------------
 \vspace*{-1cm} % Adjust this value as needed
 \firstname{Francesco}
 \familyname{Sannicola}
-\title{Machine Learning Engineer | Data Scientist}
+\title{Machine Learning Engineer \,|\, Data Scientist}
 \social[linkedin]{francesco-sannicola}
 \social[github]{francesco-s}
 \renewcommand{\emaillink}[1]{#1} % Prevent a non-sensical mailto link
 \email{\href{mailto:francescosannicola1997@gmail.com}{francescosannicola1997@gmail.com}\makenewline\emailsymbol{}\href{mailto:francesco.sannicola@pec.it}{francesco.sannicola@pec.it}}
 \extrainfo{\homepagesymbol\href{https://francescosannicola.com}{\textbf{francescosannicola.com}}}
 
+
 \begin{document}
-	
-	%----- Resume Title & Jobdouble Command -----
-	\newcommand{\jobdouble}[9]{%
-		\cvdoubleitem{#3}{#1, #2, #4}{#7}{#5, #6, #8}
-	}
-	
-	\makecvtitle
-	\vspace*{-1cm} % Adjust this value as needed
-	
-	%----------------------------------------------------------------------------------------
-	%	WORKING EXPERIENCE
-	%----------------------------------------------------------------------------------------
+    
+    %----- Resume Title & Jobdouble Command -----
+    \newcommand{\jobdouble}[9]{%
+        \cvdoubleitem{#3}{#1, #2, #4}{#7}{#5, #6, #8}
+    }
+    
+    \makecvtitle
+    \vspace*{-1cm} % Adjust this value as needed
+    
+    %----------------------------------------------------------------------------------------
+    %   WORKING EXPERIENCE
+    %----------------------------------------------------------------------------------------
+    \vspace*{-.15cm}
 	\section{Working experience}
-	\vspace*{-.15cm}
-		\cventry{\scalebox{0.9}{\faCalendar\ 09/2025-- current}}{Data Scientist II}{\scalebox{0.9}{\faBuilding\ \href{https://www.agilelab.it/}{\textit{\textbf{Agile Lab }}}}}{}{\scalebox{0.9}{\faMapMarker\ Milano - Full Remote }}{}
+    \vspace*{-.15cm}
+    \cventry{\scalebox{0.9}{\faCalendar\ 09/2025-- current}}{Data Scientist II}{\scalebox{0.9}{\faBuilding\ \href{https://www.agilelab.it/}{\textit{\textbf{Agile Lab }}}}}{}{\scalebox{0.9}{\faMapMarker\ Milano - Full Remote }}{}
 	\mycvitem{%
-		\vspace*{-.2cm}
-		Conducting AI \textbf{agent} development and graph-based geospatial analysis.
-	}
-	\vspace*{.25cm}
+        \vspace*{-.2cm}
+        \begin{itemize}
+            \item[$\bullet$] Conducting AI \textbf{agent} development and graph-based geospatial analysis.
+        \end{itemize}
+    }
+
+    \cventry{\scalebox{0.9}{\faCalendar\ 01/2025-- 08/2025}}{Machine Learning Engineer - Senior Consultant}{\scalebox{0.9}{\faBuilding\ \href{https://www.linksmt.it/}{\textit{\textbf{Links M\&T }}}}}{}{\scalebox{0.9}{\faMapMarker\ Bari - Hybrid }}{}
+    \mycvitem{%
+        \vspace*{-.2cm}
+        \begin{itemize}
+            \item[$\bullet$] Built multi-tenant IoT energy forecasting platform for 3 clients. Used genetic algorithms, \textbf{MLOps} (tracking, registry, CI/CD), and real-time dashboards. Cut peak costs, consumption, and CO\textsubscript{2} via per-tenant demand forecasts.
+        \end{itemize}
+    }
 	
-	\cventry{\scalebox{0.9}{\faCalendar\ 01/2025-- 08/2025}}{Machine Learning Engineer - Senior Consultant}{\scalebox{0.9}{\faBuilding\ \href{https://www.linksmt.it/}{\textit{\textbf{Links M\&T }}}}}{}{\scalebox{0.9}{\faMapMarker\ Bari - Hybrid }}{}
-	\mycvitem{%
-		\vspace*{-.6cm}
-		\begin{flushleft}
-			\noindent
-			\cvtag{Python} \cvtag{Java} \cvtag{Docker} \cvtag{Gitlab CI/CD} \cvtag{LangChain} \cvtag{AWS: EC2, S3, Lambda, SageMaker, Transcribe, Polly, SQS, SNS, RDS, EventBridge} \cvtag{LangGraph} \cvtag{PyTorch} \cvtag{TensorFlow/Keras} \cvtag{Kubernetes} \cvtag{Git} \cvtag{Milvus} \cvtag{FastAPI} \cvtag{Spring Boot} \cvtag{PostgreSQL} \cvtag{MongoDB} \cvtag{Redis} \cvtag{Keycloak}
-		\end{flushleft}
-		\vspace*{-.2cm}
-		\begin{itemize}
-			\item[$\bullet$] Built a multi-tenant IoT energy forecasting platform for 3 enterprise clients with genetic algorithm-optimized models, real-time dashboards, and \textbf{MLOps} from scratch (experiment tracking, model registry, versioned datasets, CI/CD, rollback), enabling per-tenant customization and reducing peak energy costs, overall power consumption, and CO\textsubscript{2} emissions via demand forecasting.
-		\end{itemize}
-	}
-	\vspace*{.25cm}
-	\cventry{\scalebox{0.9}{\faCalendar\ 03/2023--12/2024}}{Machine Learning Engineer - Consultant}{\scalebox{0.9}{\faBuilding\ \href{https://www.linksmt.it/}{\textit{\textbf{Links M\&T} }}}}{}{\scalebox{0.9}{\faMapMarker\ Bari - Hybrid }}{}
-	\mycvitem{%
-		\vspace*{-.2cm}
-		\begin{itemize}
-			\item[$\bullet$] Integrated browsing, crawling, and GraphRAG into a \textbf{ReAct Agent}-powered \textbf{chatbot} to unify on-premise and online sources, accelerating reporting and reducing prep time by 15–30 minutes per session.
-			\item[$\bullet$] Designed an ESG reporting solution underpinned by \textbf{RAG} and GPT-4o, enabling automated KPI extraction and contextual retrieval from fund reports, significantly reducing compliance costs and enhancing decision-making efficiency.
-			\item[$\bullet$] Developed an NLP web application powered by \textbf{encoder-only transformer models} to deliver contextual content recommendations with sub-5s latency, enhancing user engagement through integrated speech-to-text and text-to-speech interaction.
-			\item[$\bullet$] Engineered \textbf{predictive maintenance} and remaining useful life estimation for Electric Vehicle (EV) charging stations, reducing maintenance costs by 30\% and preventing unexpected failures through degradation models that identify critical wear variables.
-			\item[$\bullet$] Built a loan \textbf{default prediction} model that achieved 80\% accuracy with <2\% false positives, empowering banks to proactively flag high-risk accounts 3–6 months before potential payment delays.
-			\item[$\bullet$] \textbf{Lecturer} in software development, databases, and Python at \href{https://www.associazioneformazione.it/formazione-professionale/ifts-tecnico-per-la-progettazione-e-lo-sviluppo-di-applicazioni-informatiche}{\textit{\underline{Associazione Formazione}}}, and in anomaly detection and time series analysis at \href{https://academy.linksmt.it/corso-di-formazione-post-laurea-artificial-intelligence-machine-learning/}{\textit{\underline{Links Academy – AI \& ML}}}, resulting in 7+ student job placements; practical lab materials available on \href{https://github.com/francesco-s/Links-Academy---Anomaly-Detection-Time-series-analysis}{\textit{\underline{GitHub}}}.	
-			% \item[$\bullet$] Contribution to \textbf{AI technical interviews} (review on \href{https://www.glassdoor.it/Colloquio/Links-Management-and-Technology-Colloquio-RVW82686296.htm}{\textit{\underline{Glassdoor}}}).
-	\end{itemize}}
-	\vspace*{.25cm}
-	
-	\cventry{\scalebox{0.9}{\faCalendar\ 10/2022--02/2023}}{Artificial Intelligence and Data - Analyst}{\scalebox{0.9}{\faBuilding\ \href{https://www2.deloitte.com}{\textit{\textbf{Deloitte }}}}}{}{\scalebox{0.9}{\faMapMarker\ Bari - Full Remote }}{}
-	\mycvitem{%
-		\vspace*{-.6cm}
-		\begin{flushleft}
-			\noindent
-			\cvtag{Qlik Sense} \cvtag{SQL} \cvtag{Pandas} \cvtag{MS Excel} \cvtag{Qlik NPrinting}
-		\end{flushleft}
-		\vspace*{-.2cm}
-		\begin{itemize}
-			\item[$\bullet$] Developed an \textbf{ETL} workflow with automated data visualization of employee KPIs from survey data, transforming static reports into real-time dashboards that enhanced engagement, retention, and satisfaction monitoring for leadership decisions.
-	\end{itemize}}
-	
-	\vspace*{.25cm}
-	\cventry{\scalebox{0.9}{\faCalendar\ 12/2021--05/2022}}{AI engineer and System Administrator - Intern}{\scalebox{0.9}{\faBuilding\ \href{https://www.intesasanpaolo.com/}{\textit{\textbf{Intesa Sanpaolo }}}}}{}{\scalebox{0.9}{\faMapMarker\ Torino - Hybrid }}{}
-	\mycvitem{%
-		\vspace*{-.6cm}
-		\begin{flushleft}
-			\noindent
-			\cvtag{Python} \cvtag{TensorFlow} \cvtag{Google Cloud Platform} \cvtag{Flask} \cvtag{Bokeh} \cvtag{Bash}
-		\end{flushleft}
-		\vspace*{-.2cm}
-		\begin{itemize}
-			\item[$\bullet$] Implemented a real-time \textbf{time series forecasting} and anomaly detection solution, evolving from a statistical baseline to recurrent networks and autoencoders, dramatically reducing infrastructure failure response time from minutes to seconds.
-	\end{itemize}}
-	
-	%----------------------------------------------------------------------------------------
-	%	EDUCATION
-	%----------------------------------------------------------------------------------------
+    \cventry{\scalebox{0.9}{\faCalendar\ 03/2023--12/2024}}{Machine Learning Engineer - Consultant}{\scalebox{0.9}{\faBuilding\ \href{https://www.linksmt.it/}{\textit{\textbf{Links M\&T} }}}}{}{\scalebox{0.9}{\faMapMarker\ Bari - Hybrid }}{}
+    \mycvitem{%
+        \vspace*{-.2cm}
+        \begin{itemize}
+            \item[$\bullet$] Integrated browsing, crawling, GraphRAG into \textbf{ReAct agent} \textbf{chatbot}. Unified on-premise/online sources; cut reporting prep by 15--30 min/session.
+            \item[$\bullet$] Designed ESG reporting with \textbf{RAG} + \textbf{GPT}. Automated KPI extraction from fund reports; lowered compliance costs.
+            \item[$\bullet$] Developed an \textbf{NLP} web application powered by \textbf{encoder-only transformers} for contextual content recommendations with sub-5s latency, including speech-to-text features.
+            \item[$\bullet$] Engineered \textbf{predictive maintenance} for EV chargers. Degradation models cut costs 30\%, prevented failures.
+            \item[$\bullet$] Developed loan \textbf{default prediction} model (80\% accuracy, $<$2\% false positives). Flagged risks 3--6 months early.
+            \item[$\bullet$] \textbf{Lecturer} in software development, databases, and Python at \href{https://www.associazioneformazione.it/formazione-professionale/ifts-tecnico-per-la-progettazione-e-lo-sviluppo-di-applicazioni-informatiche}{\textit{\underline{Associazione Formazione}}}, and in anomaly detection and time series analysis at \href{https://academy.linksmt.it/corso-di-formazione-post-laurea-artificial-intelligence-machine-learning/}{\textit{\underline{Links Academy – AI \& ML}}}. Resulted in 7+ student job placements; practical lab materials available on \href{https://github.com/francesco-s/Links-Academy---Anomaly-Detection-Time-series-analysis}{\textit{\underline{GitHub}}}.
+        \end{itemize}}
+    
+    \cventry{\scalebox{0.9}{\faCalendar\ 10/2022--02/2023}}{Artificial Intelligence and Data - Analyst}{\scalebox{0.9}{\faBuilding\ \href{https://www2.deloitte.com}{\textit{\textbf{Deloitte }}}}}{}{\scalebox{0.9}{\faMapMarker\ Bari - Full Remote }}{}
+    \mycvitem{%
+        \vspace*{-.2cm}
+        \begin{itemize}
+            \item[$\bullet$] Developed \textbf{ETL} workflow with auto KPI visualizations from surveys. Turned static reports into real-time dashboards for engagement/retention tracking.
+        \end{itemize}}
+    
+    \cventry{\scalebox{0.9}{\faCalendar\ 12/2021--05/2022}}{AI engineer and System Administrator - Intern}{\scalebox{0.9}{\faBuilding\ \href{https://www.intesasanpaolo.com/}{\textit{\textbf{Intesa Sanpaolo }}}}}{}{\scalebox{0.9}{\faMapMarker\ Torino - Hybrid }}{}
+    \mycvitem{%
+        \vspace*{-.2cm}
+        \begin{itemize}
+            \item[$\bullet$] Implemented real-time \textbf{time series forecasting} + anomaly detection. Advanced from stats to RNNs/autoencoders; cut failure response from minutes to seconds.
+        \end{itemize}}
+    
+    %----------------------------------------------------------------------------------------
+    %   EDUCATION
+    %----------------------------------------------------------------------------------------
+    \vspace*{-.15cm}
 	\section{Education}
+    \vspace*{-.15cm}
+    \cventry{\scalebox{0.9}{\faCalendar\ 01/2020--04/2022}}{Master's degree in Computer Science - AI}{\scalebox{0.9}{\faUniversity\ \href{https://www.unito.it/}{\textit{University of Turin }}}}{}{\scalebox{0.9}{\faCheck\ \textbf{GPA}: 3.71/4 }}{}
+    \mycvitem{%
+        \begin{itemize}
+            \item[$\bullet$] Coursework: Neural Networks; Machine Learning; Natural Language Technologies; Advanced Software Architectures.
+            \item[$\bullet$] 200h collabs: web pages development for freshman orientation; study support for a student with disability.
+            \item[$\bullet$] Thesis: real-time \textbf{anomaly detection} using stats, ML, DL (\href{https://unitesi.unito.it/handle/20.500.14240/78909}{\underline{thesis link}}).
+        \end{itemize}}
+    \cventry{\scalebox{0.9}{\faCalendar\ 10/2016--12/2019}}{Bachelor's degree in Computer Science}{\scalebox{0.9}{\faUniversity\ \href{https://www.uniba.it/it}{\textit{University of Bari }}}}{}{\scalebox{0.9}{\faCheck\ \textbf{GPA}: 4/4 }}{}
+    \mycvitem{%
+        \begin{itemize}
+            \item[$\bullet$] Coursework: Computer Architecture; Operating Systems; Algorithms; Databases; Software Engineering.
+            \item[$\bullet$] Thesis: full-stack indoor positioning system integrating a content-based \textbf{recommender system}.
+        \end{itemize}}
+
+    %----------------------------------------------------------------------------------------
+    %   SKILLS
+    %----------------------------------------------------------------------------------------
+    \vspace*{-.15cm}
+	\section{Skills}
+    \small
+    \cvitem{Programming}{Python, Java, C, SQL, Bash}
+    \cvitem{ML/AI}{TensorFlow, Keras, PyTorch, scikit-learn, RAG, ReAct agents, LangChain, LangGraph, Transformers}
+    \cvitem{Analytics}{Pandas, MS Excel, Qlik Sense, Qlik NPrinting}
+    \cvitem{Databases}{PostgreSQL, MongoDB, Redis, Milvus}
+    \cvitem{Cloud \& DevOps}{AWS (EC2, S3, Lambda, SageMaker, Transcribe, Polly, SQS, SNS, RDS, EventBridge), GCP, Docker, Kubernetes, Git, GitLab CI/CD}
+    \cvitem{Tools}{FastAPI, Spring Boot, Pytest, Flask, Keycloak, Uv, Ruff, Pre-commit, Bokeh}
+    \normalsize
+
+    %----------------------------------------------------------------------------------------
+    %   CERTIFICATIONS
+    %----------------------------------------------------------------------------------------
+    \newcommand{\ExternalLink}{%
+        \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+            \begin{scope}[x=1ex, y=1ex]
+                \clip (-0.1,-0.1) --++ (0,1.2) --++ (0.6,0) --++ (0,-0.6) --++ (0.6,0) --++ (0,-1);
+                \path[draw, line width=0.5, rounded corners=0.5] (0,0) rectangle (1,1);
+            \end{scope}
+            \path[draw, line width=0.5] (0.5,0.5) -- (1,1);
+            \path[draw, line width=0.5] (0.6,1) -- (1,1) -- (1,0.6);
+    }}
+    
+    \newcommand{\certification}[5]{%
+        \cvitem{#3}{\textbf{#1}, #2 (\href{#4}{\underline{\textit{Show credentials}}})}}
+    \newcommand{\certificate}[5]{%
+        \cvitem{#3}{#1, #2 (\href{#4}{\underline{\textit{Show credentials}}})}}
+    \newcommand{\certificatendouble}[9]{%
+        \cvdoubleitem{#3}{#1\newline#2 (\href{#4}{\underline{\textit{Show credentials}}})}{#7}{#5\newline#6 (\href{#8}{\underline{\textit{Show credentials}}})}}
+    \newcommand{\certificationdoublebf}[9]{%
+        \cvdoubleitem{#3}{\textbf{#1} #2 \href{#4}{{\textbf{\ExternalLink}}}}{#7}{#5 #6 \href{#8}{{\textbf{\ExternalLink}}}}}
+    \newcommand{\certificationdouble}[9]{%
+        \cvdoubleitem{#3}{{#1} #2 \href{#4}{{\textbf{\ExternalLink}}}}{#7}{#5 #6 \href{#8}{{\textbf{\ExternalLink}}}}}
+    
 	\vspace*{-.15cm}
-	\cventry{\scalebox{0.9}{\faCalendar\ 01/2020--04/2022}}{Master's degree in Computer Science - AI}{\scalebox{0.9}{\faUniversity\ \href{https://www.unito.it/}{\textit{University of Turin }}}}{}{\scalebox{0.9}{\faCheck\ \textbf{GPA}: 3.71/4 }}{}
-	\mycvitem{%
-		\begin{itemize}
-			\item[$\bullet$] Coursework: Neural Networks; Machine Learning; Natural Language Technologies; Advanced Software Architectures.
-			\item[$\bullet$] 200h collabs: web pages development for freshman orientation, notes making and study support for student with disability.
-			\item[$\bullet$] Thesis: development and dashboarding of real-time time series \textbf{anomaly detection} systems on univariate time series using statistics, machine learning and deep learning (\href{https://unitesi.unito.it/handle/20.500.14240/78909}{\underline{link}} to thesis).
-	\end{itemize}}
-	\vspace*{.25cm}
-	\cventry{\scalebox{0.9}{\faCalendar\ 10/2016--12/2019}}{Bachelor's degree in Computer Science}{\scalebox{0.9}{\faUniversity\ \href{https://www.uniba.it/it}{\textit{University of Bari }}}}{}{\scalebox{0.9}{\faCheck\ \textbf{GPA}: 4/4 }}{}
-	\mycvitem{%
-		\begin{itemize}
-			\item[$\bullet$] Coursework: Computer Architecture; Operating Systems; Algorithms; Databases; Software Engineering.
-			\item[$\bullet$] Thesis: full-stack development of an indoor positioning system and integration with a content-based \textbf{recommender system}.
-	\end{itemize}}
-	
-	%----------------------------------------------------------------------------------------
-	%	CERTIFICATIONS
-	%----------------------------------------------------------------------------------------
-	\newcommand{\ExternalLink}{%
-		\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
-			\begin{scope}[x=1ex, y=1ex]
-				\clip (-0.1,-0.1) --++ (0,1.2) --++ (0.6,0) --++ (0,-0.6) --++ (0.6,0) --++ (0,-1);
-				\path[draw, line width=0.5, rounded corners=0.5] (0,0) rectangle (1,1);
-			\end{scope}
-			\path[draw, line width=0.5] (0.5,0.5) -- (1,1);
-			\path[draw, line width=0.5] (0.6,1) -- (1,1) -- (1,0.6);
-	}}
-	
-	\newcommand{\certification}[5]{%
-		\cvitem{#3}{\textbf{#1}, #2 (\href{#4}{\underline{\textit{Show credentials}}})}}
-	\newcommand{\certificate}[5]{%
-		\cvitem{#3}{#1, #2 (\href{#4}{\underline{\textit{Show credentials}}})}}
-	\newcommand{\certificatendouble}[9]{%
-		\cvdoubleitem{#3}{#1\newline#2 (\href{#4}{\underline{\textit{Show credentials}}})}{#7}{#5\newline#6 (\href{#8}{\underline{\textit{Show credentials}}})}}
-	\newcommand{\certificationdoublebf}[9]{%
-		\cvdoubleitem{#3}{\textbf{#1} #2 \href{#4}{{\textbf{\ExternalLink}}}}{#7}{#5 #6 \href{#8}{{\textbf{\ExternalLink}}}}}
-	\newcommand{\certificationdouble}[9]{%
-		\cvdoubleitem{#3}{{#1} #2 \href{#4}{{\textbf{\ExternalLink}}}}{#7}{#5 #6 \href{#8}{{\textbf{\ExternalLink}}}}}
-	
-	\section{Certifications}
-	\small 
-	\certificationdoublebf{AWS Certified Machine Learning}{}{04/2024}{https://www.credly.com/badges/ab41e8bd-32a3-49ce-a7a5-e3106f58beab/public_url}{AWS Machine Learning Cert Preparation }{}{03/2024}{https://certificates.cloudacademy.com/8997053f1d2091596d528402607d41ca312060fc.pdf}{}
-	
-	\certificationdouble{GCP Big Data and ML Fundamentals}{}{05/2022}{https://www.coursera.org/account/accomplishments/verify/KFC43YVQX5ZS}{GCP Fundamentals: Core Infrastructure }{}{04/2022}{https://www.coursera.org/account/accomplishments/verify/GCCEPUHES7UC}{}
-	
-	%----------------------------------------------------------------------------------------
-	%	LANGUAGES
-	%----------------------------------------------------------------------------------------
+    \section{Certifications}
+    \small 
+    \certificationdoublebf{AWS Certified Machine Learning}{}{04/2024}{https://www.credly.com/badges/ab41e8bd-32a3-49ce-a7a5-e3106f58beab/public_url}{AWS Machine Learning Cert Preparation }{}{03/2024}{https://certificates.cloudacademy.com/8997053f1d2091596d528402607d41ca312060fc.pdf}{}
+    
+    \certificationdouble{GCP Big Data and ML Fundamentals}{}{05/2022}{https://www.coursera.org/account/accomplishments/verify/KFC43YVQX5ZS}{GCP Fundamentals: Core Infrastructure }{}{04/2022}{https://www.coursera.org/account/accomplishments/verify/GCCEPUHES7UC}{}
+    
+    %----------------------------------------------------------------------------------------
+    %   LANGUAGES
+    %----------------------------------------------------------------------------------------
+    \vspace*{-.15cm}
 	\section{Languages}
-	\normalsize
-	\cvdoubleitem{Italian:}{Native}{\hfill English:}{Professional Working Proficiency}
-	
-	\clearpage
-	
-	\addtocounter{footnote}{-1}\let\thefootnote\svthefootnote
-	
+    \normalsize
+    \cvdoubleitem{Italian:}{Native}{\hfill English:}{Professional Working Proficiency}
+    
+    \clearpage
+    
+    \addtocounter{footnote}{-1}\let\thefootnote\svthefootnote
+    
 \end{document}
